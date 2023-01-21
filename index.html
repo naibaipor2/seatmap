@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function dshowpic(x) { 
+  document.getElementById(x).style.opacity = "1";
+}
+function cshowpic(x) { 
+	if (document.getElementById(x).style.opacity==0){
+	document.getElementById(x).style.opacity = "1";
+}else{
+	document.getElementById(x).style.opacity = "0";
+}
+  
+}
+function chidepic(x) { 
+  document.getElementById(x).style.opacity = "0";
+}
+</script>
+
+<style>
+.container {
+  position: relative;
+
+}
+.btn1 {
+  position: absolute;
+  top: 8.5%;
+  left: 22%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 1% 6%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn2 {
+  position: absolute;
+  top: 8.5%;
+  left: 50%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 1% 6%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn3 {
+  position: absolute;
+  top: 8.5%;
+  left: 78%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 1% 6%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn4 {
+  position: absolute;
+  top: 13%;
+  left: 22%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 1% 6%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn5 {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 1% 6%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn6 {
+  position: absolute;
+  top: 13%;
+  left: 78%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 1% 6%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.overlay {
+position: absolute;
+opacity: 0;
+  z-index: 10;
+}
+.base {
+
+  z-index: 3;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="container">
+<button class="btn1" onmouseover="showpic(16)" onmouseleave="hidepic(16)" onclick="cshowpic(16)">Button</button>
+<button class="btn2" onmouseover="showpic(17)" onmouseleave="hidepic(17)" onclick="cshowpic(17)">Button</button>
+<button class="btn3" onmouseover="showpic(18)" onmouseleave="hidepic(18)" onclick="cshowpic(18)">Button</button>
+<button class="btn4" onmouseover="showpic(19)" onmouseleave="hidepic(19)" onclick="cshowpic(19)">Button</button>
+<button class="btn5" onmouseover="showpic(20)" onmouseleave="hidepic(20)" onclick="cshowpic(20)">Button</button>
+<button class="btn6" onmouseover="showpic(21)" onmouseleave="hidepic(21)" onclick="cshowpic(21)">Button</button>
+<img src ="16.png" width ="100%"  class="overlay" id="16"/>
+<img src ="17.png" width ="100%"  class="overlay"  id="17"/>
+<img src ="18.png" width ="100%"   class="overlay" id="18"/>
+<img src ="19.png" width ="100%"   class="overlay" id="19"/>
+<img src ="20.png" width ="100%"   class="overlay" id="20"/>
+<img src ="21.png" width ="100%"  class="overlay" id="21"/>
+<img src ="mainmap.png" width ="100%"  class="base"/>
+</div>
+
+
+
+</body>
+</html>
+
+
